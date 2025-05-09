@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page - Findit</title>
+    <link rel="stylesheet" href="css/register.css" >
+    
+</head>
+
+<body>
+    <div class="signup-container">
+        <h2 class="signup-title">Create Account</h2>
+        <p class="signup-subtitle"> Join Findit to report and find lost items</p>
+
+    <div class="registration-form">
+        <h2>Register</h2>
+        <form id="regForm" class="signup-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="userid">ID:</label>
+                <input type="text" id="userid" required />
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" required />
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" required />
+            </div>
+            <div class="form-group">
+                <button type="submit">Create Account</button>
+            </div>
+            <p class="loin-text"> Already have an account? <a href="login.html">Login in</a></p>
+        </form>
+        
+    </div>
+</div>
+    <script>
+        const form = document.getElementById('regForm');
+        const message = document.getElementById('message');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const userid = document.getElementById('userid').value.trim();
+            const contact = document.getElementById('contact').value.trim();
+            const location = document.getElementById('location').value.trim();
+
+            if (name && userid && contact && location) {
+                // In a real app, you'd send this data to a backend
+                console.log({ name, userid, contact, location });
+                message.textContent = "Account created successfully!";
+                form.reset();
+            } else {
+                message.textContent = "Please fill in all fields.";
+                message.style.color = "red";
+            }
+        });
+    </script>
+</body>
+
+</html>

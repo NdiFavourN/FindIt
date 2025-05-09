@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report Lost Item - Findit</title>
+  <link rel="stylesheet" href="css/lost.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Report Lost Item</h2>
+    <form id="lostItemForm">
+      <input type="text" name="itemName" placeholder="Object Name" required />
+      <input type="text" name="color" placeholder="Color" required />
+      <input type="text" name="location" placeholder="Location Last Seen" required />
+
+      <select name="category" required>
+        <option value="" disabled selected>Select Category</option>
+        <option value="electronics">Electronics</option>
+        <option value="documents">Documents</option>
+        <option value="accessories">Accessories</option>
+        <option value="pets">Pets</option>
+        <option value="others">Others</option>
+      </select>
+
+      <label for="images">Upload Images (max 3)</label>
+      <input type="file" id="images" name="images" accept="image/*" multiple required />
+      <div class="preview" id="preview"></div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="js/lost.js"></script>
+</body>
+</html>

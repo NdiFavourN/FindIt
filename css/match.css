@@ -1,0 +1,85 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #3f51b5, rgb(6, 163, 195));
+    margin: 0;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 700px;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.7s ease;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .item-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .item-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #fff;
+  }
+  
+  .item-info {
+    flex: 1;
+  }
+  
+  .item-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  .item-info a {
+    color: #ffeb3b;
+    text-decoration: none;
+  }
+  
+  .item-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .item-info button {
+    margin-top: 15px;
+    background-color: #fff;
+    color: rgb(6, 163, 195);
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .item-info button:hover {
+    background-color: rgb(6, 163, 195);
+    color:white;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
