@@ -10,8 +10,24 @@
 
 <body>
     <header>
-        <h1>Findit</h1>
-        <input type="text" id="search" placeholder="Search lost items..." />
+        <div class="nav">
+            <h1>Findit</h1>
+            <ul>
+                <div class="nav1">
+                    <a href="lost.html">
+                        <li>REPORT ITEM </li>
+                    </a>
+                    <a href="found.html">
+                        <li>UPLOAD ITEM</li>
+                    </a>
+                </div>
+
+            </ul>
+        </div>
+        <div class="hd">
+            <input type="text" id="search" placeholder="Search lost items..." />
+        </div>
+
     </header>
 
     <section class="carousel">
@@ -80,6 +96,63 @@
             <div class="slide" data-category="electronics"><img src="pic/11.jpg" alt="Item 2" />
                 <p>Torch</p>
             </div>
+            <div class="slide" data-category="jewelries"><img src="pic/38.jpg" alt="Item 2" />
+                <p>Black Watch</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/37.jpg" alt="Item 2" />
+                <p>Rolex</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/36.jpg" alt="Item 2" />
+                <p>Ice Watch</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/20.jpg" alt="Item 2" />
+                <p>Ice Belt</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/21.jpg" alt="Item 2" />
+                <p>Golden Necklace</p>
+            </div>
+            <div class="slide" data-category="electronics"><img src="pic/22.jpg" alt="Item 2" />
+                <p>golden pochet purse</p>
+            </div>
+            <div class="slide" data-category="electronics"><img src="pic/23.jpg" alt="Item 2" />
+                <p>Cross chain</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/24.jpg" alt="Item 2" />
+                <p>Rosary pink</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/25.jpg" alt="Item 2" />
+                <p>Breacelet</p>
+            </div>
+            <div class="slide" data-category="jewelries"><img src="pic/26.jpg" alt="Item 2" />
+                <p>Ice chain</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/27.jpg" alt="Item 2" />
+                <p>Red valise</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/28.jpg" alt="Item 2" />
+                <p>white bag</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/29.jpg" alt="Item 2" />
+                <p>Lenses and casing</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/30.jpg" alt="Item 2" />
+                <p>Medines</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/31.jpg" alt="Item 2" />
+                <p>Hoddie</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/32.jpg" alt="Item 2" />
+                <p>Hand Bag</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/33.jpg" alt="Item 2" />
+                <p>Black Bag</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/34.jpg" alt="Item 2" />
+                <p>T-shirt</p>
+            </div>
+            <div class="slide" data-category="others"><img src="pic/35.jpg" alt="Item 2" />
+                <p>Blue Slippers</p>
+            </div>
         </div>
     </section>
 
@@ -90,9 +163,16 @@
             <button>Documents</button>
             <button>Accessories</button>
             <button>Pets</button>
+            <button>Jewelries</button>
+            <button>Others</button>
         </div>
     </section>
-
+    <section class="my-items-section">
+  <h2>My Found Items</h2>
+  <div class="items-container" id="myItemsContainer">
+    <!-- Items will be populated dynamically -->
+  </div>
+</section>
     <script src="js/home.js"></script>
 </body>
 

@@ -4,7 +4,7 @@
   }
   
   body {
-    background: linear-gradient(to right, #3f51b5, rgb(6, 163, 195));
+    background: linear-gradient(to right, #009688, #4caf50);
     padding: 40px 20px;
     color: #fff;
     display: flex;
@@ -27,7 +27,7 @@
     margin-bottom: 20px;
   }
   
-  form input, form select {
+  form input, form select, form button {
     width: 100%;
     margin-bottom: 15px;
     padding: 12px;
@@ -43,20 +43,14 @@
   
   form button {
     background-color: #fff;
-    color: rgb(6, 163, 195);
+    color: #009688;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
-    border-radius:2rem;
-    border: none;
-    margin: 0 3.5rem;
-    width:70%;
-    height:2.5rem;
   }
   
   form button:hover {
-    background-color:  rgb(6, 163, 195);
-    color:white;
+    background-color: #b2dfdb;
   }
   
   label {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - User Management</title>
+  <link rel="stylesheet" href="css/users.css" />
+</head>
+<body>
+  <div class="admin-panel">
+    <h2>User Management</h2>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search users by name or email..." />
+    </div>
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userList">
+        <!-- Users dynamically populated here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/users.js"></script>
+</body>
+</html>

@@ -6,7 +6,7 @@
   }
   
   body {
-    background: linear-gradient(to right, #3f51b5,rgb(6, 163, 195));
+    background: linear-gradient(to right, #3f51b5, #5a55ae);
     color: #fff;
     height: 100vh;
     display: flex;
@@ -52,7 +52,7 @@
     width: 100%;
     padding: 12px;
     background-color: #fff;
-    color: rgb(6, 163, 195);
+    color: #3f51b5;
     border: none;
     border-radius: 25px;
     font-size: 1rem;
@@ -62,8 +62,7 @@
   }
   
   .login-form button:hover {
-    background-color: rgb(6, 163, 195);
-    color:white;
+    background-color: #d1d1f3;
   }
   
   .signup-text {
