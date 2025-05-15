@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to right, #3f51b5, rgb(6, 163, 195));
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     margin: 0;
     padding: 30px;
     color: #fff;
@@ -59,7 +59,7 @@ body {
   .item-info button {
     margin-top: 15px;
     background-color: #fff;
-    color: rgb(6, 163, 195);
+    color: #2575fc;
     border: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -69,8 +69,7 @@ body {
   }
   
   .item-info button:hover {
-    background-color: rgb(6, 163, 195);
-    color:white;
+    background-color: #e0e0e0;
   }
   
   @keyframes fadeIn {
